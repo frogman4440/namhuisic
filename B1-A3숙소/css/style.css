@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "pc.css";
+@import "mobile.css";
+
+*{margin: 0 auto; padding: 0;}
+a{text-decoration: none; color: #4e4e4e;}
+a:link, a:hover, a:visited, a:active{text-decoration: none; color: #4e4e4e;}
+ul, li{list-style: none;}
+section>h2{display: none;}
+header::after,
+.menu::after,
+header>h3::after,
+.wrap::after,
+nav div::after,
+.wrap>div::after,
+footer ul::after
+{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+*{font-size: 20px;}
+.wrap{width: 1500px; margin: 0 auto; text-align: center; padding: 0;}
+/*비주얼*/
+section>img{height:600px; width: 100%;}
+.visual_banner{position: relative;}
+.visual_banner div{position: absolute; bottom: 0;width: 100%;}
+
+.visual_banner div p{background: rgba(0,0,0,.6); height: 150px; text-align: center;  color: #fff; line-height: 1;
+padding-top: 40px; font-size: 1.5rem;}
+.visual_banner .ar{margin-bottom: 135px;}
+.visual_banner .ar img{position: absolute; height: 50px;}
+.visual_banner div img{top:50%;}
+.visual_banner div img:last-child{right: 0;}
+
+
+
+
+/*헤더*/
+header>h2{display: none;}
+.gnb{background: red;}
+nav div p:hover{color: #7fc5c5; font-weight: bold; cursor: pointer; transition: all 0.5s;}
+
+
+/*푸터*/
+footer ul li{float: left; font-weight: bold;}
+footer{background: #494949; text-align: center; height: 300px; padding: 0; margin: 0 auto; color: #fff}
+
+footer p:first-child{padding: 0;}
+
+
+
+.font1{text-align: center; background: #7fc5c5; height: 80px; line-height: 80px;}
+.font1 h3{font-size: 25px;}
+
+.gogu span{background: #bfae8f;}
+.junggu span{background: #bc7b7d;}

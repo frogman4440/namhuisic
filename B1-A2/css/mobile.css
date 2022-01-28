@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@media all and (max-width:960px){
+
+
+	
+    header{height: 60px;}
+    #menu_btn{display:block; width:60px; margin-left:5%; 
+    margin-top: 3%; height: 80px;}
+	#menu_btn>span{
+		display:block;
+		background:#7fc5c5;
+		width:100%;
+		height:4px;
+		transition:all .3s;
+	}
+    
+    #menu_btn>span:nth-child(2){margin:15px 0px;}
+
+	
+
+    #menu_btn.menuAni>span{
+		background:transparent;
+		transition:all .3s;
+	}
+    .menuAni::before{
+		content:'';
+		display:block;
+		width:60px; height:3px;
+		top:15px; left:50px;
+		text-align:center;
+		transform:rotate(-45deg);
+		position:absolute;
+		background:#7fc5c5;
+	}
+	.menuAni::after{
+		content:'';
+		display:block;
+		width:60px; height:3px;
+		top:15px; left:50px;
+		text-align:center;
+		transform:rotate(45deg);
+		position:absolute;
+		background:#7fc5c5;
+	}
+    .menu{
+		width:100%;
+		margin:70px auto; 
+		position:absolute; 
+		display:none;
+		background:rgba(255, 255, 255,.9);
+		top:-10px;
+		z-index: 999999;
+		}
+        nav h3 a img{width: 180px;  margin-top:10px;}
+        nav{position: relative;}
+        nav>h3{position: absolute; left: 50%; top: -20px; transform: translateX(-50%);}
+        nav div:last-child{position: absolute; right: 5%; bottom: 50px;}
+        nav div>p{float: left; margin-left: 30px; font-size: 2vw; font-family: 'Noto Sans KR', sans-serif;}
+		nav div p:last-child{color:#009b9b;}
+        .menu>li>a, .submenu>li>a{display: block; height: 40px; line-height: 40px; padding:5px 10px;}
+		.menu>li>a:hover, .submenu>li>a:hover{color: #fff; font-weight: bold; border-bottom: 1px solid #fff; border-top: 1px solid #fff;}
+		.menu>li:hover, .submenu>li:hover{background:#7fc5c5;}
+		.submenu>li>a{padding:5px 0px 5px 20px;}
+
+		.menu>li>a, .submenu>li>a{
+			display:block;
+			padding:5px 0px 5px 20px;
+			border-bottom:1px solid #7fc5c5;
+			width:100%;
+			transition:all .1s;
+			}
+			.submenu>li>a{padding-left: 40px;}
+			.submenu>li>a::before{content: '-';}
+
+			.back{height: 350px;}
+			.back>li{position:absolute; width:100%; height:350px;
+				background:url() no-repeat center center/cover;}
+
+.ticket div{width: 90%;}
+.train li:nth-child(2){font-size: 25px; font-weight: bold;}
+.train li:nth-child(3){font-size: 18px;  margin-top: 20px; line-height: 1.2;}
+.train li:nth-child(4){font-size: 20px; font-weight: bold; padding-left: 10px;}
+.train li:nth-child(5){font-size: 15px; margin-bottom: 100px; width: 100%; padding-right: 10px;}
+.train img{min-height: 300px;}
+.train li a:last-child{font-size: 20px;}
+.ticket div:last-child{margin-top: 5%;}
+
+/*도시내*/
+.content, .content1{width: 42%; margin-left: 2%;}
+/*컨텐츠 사이즈 조절*/
+.zai{margin-left: 8%;}
+.content ul li:nth-child(3){font-size: 2vw; padding-bottom: 20px;}
+.content ul li:nth-child(4){font-size: 1vw;}
+.content ul li:nth-child(5){color: #ab7878; font-weight: bold; font-size:2vw; margin-bottom: 80px;}
+.content ul li:nth-child(6){font-size: 1.3vw;}
+.city div:last-child{display: none;}
+
+/*타도시*/
+.content1 ul li:nth-child(3){font-size: 2vw; padding-bottom: 20px;}
+.content1 ul li:nth-child(4){font-size: 1vw;}
+.content1 ul li:nth-child(5){color: #ab7878; font-weight: bold; font-size:2vw; margin-bottom: 80px;}
+.content1 ul li:nth-child(6){font-size: 1.3vw;}
+.city div:last-child{display: none;}
+/*푸터*/
+footer ul li{font-size: 15px;}
+footer p{font-size: 15px; text-align: left; padding-left: 10px;}
+footer ul li{width: 160px; padding: 5px;}
+footer ul{width: 540px; padding: 20px 0;}
+}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@media all and (min-width:960px){
+header{background: #fff; max-width: 100%;}
+
+
+header img{width:170px; margin-left:50%; margin-top:7%; padding:0 auto;}
+header h3 a{float: left;}
+.menu{max-width: 900px;}
+.menu li{float: left; font-size: 1.2em; position: relative; text-align: center;}
+.menu>li:nth-of-type(1){width: 16%; margin-left: 17%;}
+.menu>li:nth-of-type(2){width: 16%;}
+.menu>li:nth-of-type(3){width: 16%;}
+.menu>li:nth-of-type(4){width: 16%;}
+.menu>li>a, .submeni>li>a{display:block; height:80px; line-height:80px; width:100%; font-weight: bold;}
+.submenu{z-index:99; display:none; width:100%; position:absolute;}
+.submenu>li>a{display:block;}
+.menu>li>a:hover, .submenu>li>a:hover{color:#7fc5c5; transition:all .5s; font-weight: bold; background:#fff;}
+.submenu>li a{background:#7fc5c5; height: 80px; line-height:80px;}
+.submenu li{width:100%; height: 80px;}
+.menu{background:#fff; width:1500px;}
+nav{position: relative;}
+nav div{position: absolute; right: 3%; top: 0%; width: 16%; height: 80px; line-height: 80px;}
+nav div p{float: left; margin-left: 50px; font-size:15px; font-family: 'Noto Sans KR', sans-serif;}
+nav div p:last-child{color:#009b9b;}
+
+/*제품설명*/
+.photo_page{width: 100%; background: rgb(250, 248, 247);}
+.photo_page>h3{text-align: center; font-size: 30px;margin: 50px;}
+.photo_page>div{width: 78%; position: relative;}
+.photo_page>div div{float: left; width: 50%; 
+	transition: ease-in-out all .4s;
+}
+.photo_page>div div:nth-child(2){width: 25%;}
+.photo_page>div div:nth-child(3){width: 25%;}
+.photo_page>div div:nth-child(4){width: 25%;}
+.photo_page>div div:nth-child(5){width: 25%;}
+.photo_page>div div img{width: 100%;}
+.txt1{font-size: 25px; font-weight: bold; color: #4e4e4e;
+line-height: 2;
+}
+.photo_page>div div:hover{transform: scale(1.05); transition: ease-in-out all .7s; box-shadow: 5px 5px 5px 5px #4e4e4e; z-index: 9999999; }
+
+.momo{display: none;}
+
+/*퀵메뉴*/
+#followquick { position:absolute; top:20%; right:5%; width: 18%;}
+.cntWrap button{width: 30px;}
+#followquick ul{border: 1px solid black; padding: 15px; border-radius: 10px;}
+#followquick h3{display: none;}
+#followquick ul li:last-child{font-size: 25px; text-align: center; margin: 20px; background: #7fc5c5; color: aliceblue; padding: 10px 0px; font-weight: bold; border-radius: 10px;}
+
+
+/*여행상세*/
+.tra{width: 100%; position: relative; margin-top: 100px;}
+.tra>div{width: 50%; background: rgb(250, 248, 247);
+	position: absolute; left: 11%;
+} 
+.tra>div>ul>li{border-top: 1px solid black; font-size: 30px; display: block;}
+
+.subtrxt{margin-left: 10%; font-size: 15px; line-height: 2;}
+
+/*여해일정*/
+.plan{width: 100%; position: relative; margin-top: 700px; }
+.plan>div{width: 50%; background: rgb(250, 248, 247);
+	position: absolute; left: 11%;
+} 
+.plan>div>ul>li{border-top: 1px solid black; font-size: 30px; display: block; color: #4e4e4e;}
+
+.subtrxt{margin-left: 10%; font-size: 15px; line-height: 2;}
+.plan h3{border-top: 2px solid black; font-size: 30px; padding-top: 20px; color: #4e4e4e; border-bottom: 1px solid #4e4e4e; padding-bottom: 10px;}
+
+
+.plan>div>div div{width: 45%; float: left;}
+.plan>div>div div img{width: 100%;}
+.txt2{margin-left: 2%;}
+.txt2 h4, .txt2 h5{font-weight: bolder; color: #4e4e4e;}
+.txt2 h4{font-size: 25px;}
+.txt2 h5{margin-top: 10%;}
+.txt2 p{font-size: 1vw;}
+.line{border-top: 1px solid #4e4e4e; padding-top: 20px;}
+.time{font-weight: bold; color: #4e4e4e;}
+.plan>div{border-bottom: 2px solid black;}
+.dayz{color: #bc7b7d; font-size: 25px; font-weight: bold;}
+
+/*호텔*/
+.hotel{width: 100%; margin-top: 3290px; position: relative;}
+.hotel>div{width: 50%; background: rgb(250, 248, 247);
+	position: absolute; left: 11%;}
+.hotel h3{font-size: 30px; color: #4e4e4e;}
+
+
+.hotel>div img:nth-child(1){width: 100%;}
+.hotel>div img:nth-child(2){width: 30%;margin-left: 1%;}
+.hotel>div img:nth-child(3){width: 30%;margin-left: 3%;}
+.hotel>div img:nth-child(4){width: 30%;margin-left: 3%;}
+
+
+.hotel p{margin-top: 4%; color: #4e4e4e; font-size: 1vw;padding: 20px; line-height: 2;}
+
+
+
+/*푸터*/
+footer ul li{float: left; font-weight: bold; background: #494949;}
+footer{background: #494949; text-align: center; height: 300px; padding: 0; margin: 0 auto; color: #fff;  margin-top: 4700px;}
+footer ul{background: #494949;}
+footer p:first-child{padding: 0;}
+footer p{background: #494949;}
+input{width: 100%;}
+
+/*푸터*/
+footer ul{padding: 3% 0 2% 10%;}
+footer ul li{width: 213px; font-size: .8vw;}
+footer p{text-align: left; padding-left: 20%; line-height: 2; font-size: .9vw;}
+}

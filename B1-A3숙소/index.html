@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+    <title>타이틀명 여기</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 85%;
+        }
+        
+        .swiper-slide {
+          text-align: center;
+          font-size: 15px;
+          background: #d8eded;/*배경*/
+  
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .jung{background: #ddbdbe;}
+        .gogo{background: #dfd6c7;}
+        .swiper-slide img {
+          display: block;
+          width: 50%;
+          height: 50%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="menu_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+    <h3><a href="#"><img src="./images/logo.png" alt="#" /></a></h3>
+        <ul class="menu">
+            <li><a href="#">자유여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">패키지여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+                <ul class="submenu">
+                    <li><a href="#">여행후기</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="submenu">
+                    <li><a href="#">My Page</a></li>
+                    <li><a href="#">회원정보수정</a></li>
+                    <li><a href="#">나의문의내역</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+        <p>로그인</p>
+       <p>예약확인</p>
+       </div>
+    </nav>
+</header>
+<!--비주얼배너-->
+<section class="visual_banner">
+    <h2>비주얼배너</h2>
+    <img src="../images/19067.jpg" alt="#"/>
+    <div>
+ 
+    <p>일본의 핵심, 그리고 세계의 가장 큰 도시권 중 하나.</br>
+   도쿄</p>
+    </div>
+    <div class="ar">
+    <img src="../images/arw.png" alt="#" />
+    <img src="../images/arw1.png" alt="#" />
+    </div>
+</section>
+
+<!--가성비-->
+    <section class="font1"><h3>가성비 호텔</h3></section>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/cap.jpg" alt="#"/>
+            </div>
+            <div class="txt1">
+                <p>안신오이도</p>
+                <p>신주쿠에 있는 안신 오야도 캡슐 호텔은 많은 여행자들이 들르는 가성비 숙소죠
+                이곳에서는 샤워, 식당,  카페 등등... 여러가지의 편의 시설이 존재하고 
+                또, 위치가 신주쿠 중심부에 있어 다음 날 일정을 편성 에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/cap1.jpg" alt="#"/>
+            </div>
+            <div class="txt1">
+                <p>하코다테</p>
+                <p>하코다테 캡슐호텔은 많은 여행자들이 현지인들도 많이 이용하는 호텔입니다.
+                라운지에는 다양한 편의시설과 전지역 와이파이 무료 충전기 대여도 합니다.
+                또, 위치 신주쿠 중심부에 있다보니 다음 날 일정을 편성 할 때에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,500 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide"> <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/cap.jpg" alt="#"/>
+            </div>
+            <div class="txt1">
+                <p>안신오이도</p>
+                <p>신주쿠에 있는 안신 오야도 캡슐 호텔은 많은 여행자들이 들르는 가성비 숙소죠</br>
+                이곳에서는 샤워, 식당,  카페 등등... 여러가지의 편의 시설이 존재하고 </br>
+                또, 위치가 신주쿠 중심부에 있어 다음 날 일정을 편성 에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/cap1.jpg" alt="#"/>
+            </div>
+            <div class="txt1">
+                <p>하코다테</p>
+                <p>하코다테 캡슐호텔은 많은 여행자들이 현지인들도 많이 이용하는 호텔입니다.</br>
+                라운지에는 다양한 편의시설과 전지역 와이파이 무료 충전기 대여도 합니다.</br>
+                또, 위치 신주쿠 중심부에 있다보니 다음 날 일정을 편성 할 때에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,500 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        </div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  
+
+
+<!--중저가-->
+<section class="font1 jung"><h3>중저가 호텔</h3></section>
+  <div class="swiper mySwiper jung">
+    <div class="swiper-wrapper jung">
+      <div class="swiper-slide jung">
+          <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/jung.jpg" alt="#"/>
+            </div>
+            <div class="txt1 junggu">
+                <p>렘 히비야</p>
+                <p>렘 히비야 호텔은 중저가 호텔 라인업의 중심에 위치해 있습니다.</br>
+                    조식 무료제공, 공항(나리타 공항행)버스 또한 무료로 운영하고 있습니다.</br>
+                    각종 편의시설과 다양한 서비스를 제공합니다.</p>
+                    <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+                <p>하루 기준 ¥20,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/jung1.jpg" alt="#"/>
+            </div>
+            <div class="txt1 junggu">
+                <p>스테이 모리시타</p>
+                <p>도쿄 고토구에 위치한 레지던스 아파트먼트형 숙소입니다.</br>
+                가족 여행객이나 3~4명의 친구들과 여행시 이용 가능한 좋은 숙소입니다.</br>
+                그 외에 용도에 따른 다양한 객실이 있습니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥15,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide jung"> <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/jung1.jpg" alt="#"/>
+            </div>
+            <div class="txt1 junggu">
+                <p>안신오이도</p>
+                <p>신주쿠에 있는 안신 오야도 캡슐 호텔은 많은 여행자들이 들르는 가성비 숙소죠</br>
+                이곳에서는 샤워, 식당,  카페 등등... 여러가지의 편의 시설이 존재하고 </br>
+                또, 위치가 신주쿠 중심부에 있어 다음 날 일정을 편성 에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/jung.jpg" alt="#"/>
+            </div>
+            <div class="txt1 junggu">
+                <p>하코다테</p>
+                <p>하코다테 캡슐호텔은 많은 여행자들이 현지인들도 많이 이용하는 호텔입니다.</br>
+                라운지에는 다양한 편의시설과 전지역 와이파이 무료 충전기 대여도 합니다.</br>
+                또, 위치 신주쿠 중심부에 있다보니 다음 날 일정을 편성 할 때에도 편리합니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥2,500 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        </div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<!--고급-->
+<section class="font1 gogo"><h3>최고급 호텔</h3></section>
+<div class="swiper mySwiper gogo">
+    <div class="swiper-wrapper gogo">
+      <div class="swiper-slide gogo">
+          <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/go.jpg" alt="#"/>
+            </div>
+            <div class="txt1 gogu">
+                <p>민다린 호텔</p>
+                <p>도쿄 최중심에 위치한 5성급 호텔입니다.</br>
+                    이용객들을 위한 모든 서비스를 최상으로 제공하며 </br>
+                    객실에서 보는 도쿄의 야경또한 매우 좋습니다.<br/><br/><br/><br/>
+                </p>
+                    <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+                <p>하루 기준 ¥90,000 ~</p>
+                <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/go2.jpg" alt="#"/>
+            </div>
+            <div class="txt1 gogu">
+                <p>리츠칼튼 도쿄 호텔</p>
+                <p>내부 디자인이 동양과 서양의 장점만을 섞어 만든듯한 인테리어가 매우 좋고
+                한국어가 가능한 직원들도 항시 대기하고 있어
+                일본어나 영어가 미숙한 이용자들도 부담없이 이용 할 수 있습니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥75,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide gogo"> <div class="wrap">
+        <div class="gasung1">
+            <div class="photo1">
+                <img src="./images/go2.jpg" alt="#"/>
+            </div>
+            <div class="txt1 gogu">
+                <p>리츠칼튼 도쿄 호텔</p>
+                <p>내부 디자인이 동양과 서양의 장점만을 섞어 만든듯한 인테리어가 매우 좋고
+                한국어가 가능한 직원들도 항시 대기하고 있어
+                일본어나 영어가 미숙한 이용자들도 부담없이 이용 할 수 있습니다.</p>
+                <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+            <p>하루 기준 ¥75,000 ~</p>
+            <span>더 알아보기</span>
+            </div>
+        </div>
+        <div class="gasung2">
+            <div class="photo1">
+                <img src="./images/go.jpg" alt="#"/>
+            </div>
+            <div class="txt1 gogu">
+                <p>민다린 호텔</p>
+                <p>도쿄 최중심에 위치한 5성급 호텔입니다.</br>
+                    이용객들을 위한 모든 서비스를 최상으로 제공하며 </br>
+                    객실에서 보는 도쿄의 야경또한 매우 좋습니다.<br/><br/><br/><br/>
+                </p>
+                    <p>※사진과 실제 제공되는 객실이 다를 수 있습니다. </p>
+                <p>하루 기준 ¥90,000 ~</p>
+                <span>더 알아보기</span>
+            </div>
+        </div>
+        </div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <footer>
+    <ul>
+        <li>
+            (주)Ever Go
+        </li>
+        <li>
+            회사소개
+        </li>
+        <li>
+            찾아오시는길
+        </li>
+        <li>
+            해외여행 약관
+        </li>
+        <li>
+            소비자 피해 보상 규정
+        </li>
+        <li>
+            여행자 보험
+        </li>
+    </ul>
+    <p>
+        사업자등록번호 123-45-67890 | 통신판매업 신고 - 인천 1234호 | 관광사업자 등록번호 123
+    </p>
+        
+    <p>
+        대표이사 : 홍길동 | 개인정보관리책임자 : 홍길동
+    </p>
+    <p>
+        인천 서구 연희동123길 몰라빌딩 202호 | 대표번호 : 123-1234-1234 | E-mail : asdf@naver.com
+    </p>
+    <p>
+        Copyright@ 2022-2022 IOS All Rights Reserved
+    </p>
+    <p>
+        Ever Go여행사는 영업보증 보험 - 국외여행업의 기획여행(2억원), 국외여행업(4천만원)에 가입되어 있습니다.
+    </p>
+</footer>
+
+<script src="./js/js.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+</script>
+</body>
+</html>

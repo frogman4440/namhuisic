@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import "pc.css";
+@import "mobile.css";
+
+*{margin: 0 auto; padding: 0; font-size: 15px;}
+a{text-decoration: none; color: #4e4e4e;}
+a:link, a:hover, a:visited, a:active{text-decoration: none; color: #4e4e4e;}
+ul, li{list-style: none;}
+section>h2{display: none;}
+header::after,
+.menu::after,
+header>h3::after,
+.wrap::after,
+nav div::after,
+.train::after,
+.ticket::after,
+.city::after,
+.a_city::after
+{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+*{font-size: 20px;}
+.wrap{width: 1500px; margin: 0 auto; text-align: center; padding: 0;}
+
+
+/*헤더*/
+header>h2{display: none;}
+.gnb{background: red;}
+nav div p:hover{color: #7fc5c5; font-weight: bold; cursor: pointer; transition: all 0.5s;}
+
+
+/*슬라이드*/
+.slide{position:relative; background: rgba(121, 118, 118, 0.315);}
+.back{
+	width:100%;
+	overflow:hidden;
+	z-index:1;
+	position:relative;
+}
+
+.back>li:nth-child(1){background-image:url('../images/slide1.jpg');
+	opacity:0;
+}.back>li:nth-child(2){background-image:url('../images/slide2.jpg');
+	opacity:0;
+}
+.back>li:nth-child(3){background-image:url('../images/slide3.jpg');
+	opacity:0;
+}
+.back>li.top{
+	opacity:.9;
+	z-index:3 !important;
+	transition:all 2s;
+}
+.chang{height: 100px; width: 100%; background: #ab7878;}
+.chang h3{font-size: 35px; text-align: center; line-height: 100px; color: #fff;}
+
+.slide h3{height: 100px; font-weight: bold; font-size: 30px; line-height: 1.5; text-align: center;}
+.slide>span{height: 100px; width: 100%; background: rgba(58, 58, 58, 0.986); color: rgb(54, 54, 54); position: relative;}
+.slide>span img:first-child{height: 70px; width: 70px; position: absolute; left: 0; top: 0;}
+.slide>span img:last-child{height: 70px; width: 70px; position: absolute;top: 0; left: 50%;}
+
+/*배너*/
+.cap img{height: 60px;}
+.cap{background: #0000008e; height: 100px; position: absolute; width: 100%; bottom: 0%; z-index: 99999;}
+.cap p{text-align: center; line-height: 1.5; font-size: 30px; font-weight: bold; color: #fff;}
+.cap img{position: absolute; bottom: 20%;}
+.cap img:last-child{right: 0;}
+
+
+
+
+/*도심에서 공항*/
+.train{position: relative;}
+.ticket{margin-top: 50px; color: #4e4e4e;}
+.ticket h3{text-align: center; font-size: 35px; color: #4e4e4e; margin-bottom: 50px;}
+.ticket h4{text-align: center; font-size: 30px; color: #4e4e4e; margin-bottom: 50px;}
+.train{width: 100%; border: 1px solid #4e4e4e; border-radius: 10px;}
+.train img{width: 90%; height: 130%; margin: 1%; border-radius: 10px;}
+.train li{float: left; width: 50%;}
+
+
+.train li a:last-child{background: #7fc5c5; width: 25%;
+padding: 2%; color: #fff; border-radius: 10px; position: absolute; bottom: 5%; right: 5%; text-align: center;
+}
+.train li a:hover{font-weight: bold; transition: all .5s;}
+
+/*도시내*/
+.city{width: 100%; background: rgba(127,197,197,.2); margin-top: 50px;}
+.city h3, .a_city h3{text-align: center; font-size: 35px; color: #4e4e4e; margin-bottom: 50px; padding-top: 50px;}
+
+.content ul, .content1 ul{width: 100%; border: 1px solid #4e4e4e; text-align: left; background: #FFF; border-radius: 10px; position: relative;}
+.content img, .content1 img{width: 90%; height: 200px; margin: 15px; border-radius: 10px;}
+.content li, .content1 li{padding-left: 30px; color: #4e4e4e;}
+.content li:nth-child(2){padding-left: 0;}
+.content li:first-child{text-align: center; padding-left: 0;}
+.content li hr{margin: 15px;}
+.content ul li:nth-child(6){position:absolute; bottom: 5%; right: 5%; padding: 2%; background: #7fc5c5; border-radius:10px; color: #fff; }
+
+.content{float: left; margin-bottom: 4%;}
+
+.city{position: relative;}
+.city>a{position: absolute; bottom: 0%; left: 50%; font-size: 25px; transform: translateX(-50%); font-weight: bold; transition: ease-in-out 1s;}
+.content{display: none;}
+
+.city div{transition: ease-in-out 1s;}
+.city div:hover{box-shadow: 5px 5px 10px 3px #4e4e4e; 
+	transform: scale(1.1);
+	transition: all .5s;}
+
+/*타도시*/
+.a_city{background: rgba(191,174,143,.4);}
+.a_city h3{width: 100%;
+}
+.content1 li:nth-child(2){padding-left: 0;}
+.content1 li:first-child{text-align: center; padding-left: 0;}
+.content1 ul li:nth-child(6){position:absolute; bottom: 5%; right: 5%; padding: 2%; background: #ab7878; border-radius:10px; color: #fff; font-weight: bold;}
+.content1{float: left; margin-bottom: 4%;}
+
+
+.city div:hover li:nth-child(6){ font-weight: bold; cursor: pointer;}
+.a_city div:hover li:nth-child(6){ font-weight: bold; cursor: pointer;}
+.a_city div{transition: ease-in-out 1s;}
+.a_city div:hover{box-shadow: 5px 5px 10px 3px #4e4e4e; 
+	transform: scale(1.07); transition: all .5s; z-index: 99999;}
+
+
+	/*푸터*/
+footer ul li{float: left; font-weight: bold;}
+footer{background: #494949; text-align: center; height: 300px; padding: 0; margin: 0 auto; color: #fff}
+
+footer p:first-child{padding: 0;}
